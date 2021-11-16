@@ -14,6 +14,6 @@ RUN setcap cap_net_raw=+ep ${GOPATH}/bin/smokeping_prober
 
 EXPOSE $LISTEN_PORT
 
-CMD ["--web.listen-address=:9374", "-i 1s", "www.google.com"}]
+CMD ["--web.listen-address=:9374", "-i 1s", "www.google.com"]
 
 ENTRYPOINT ["/go/bin/smokeping_prober"]
